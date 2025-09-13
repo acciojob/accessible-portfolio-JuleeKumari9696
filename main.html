@@ -1,48 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accessible Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-  
-  <!-- Portfolio Heading -->
-  <h1 role="heading">My Portfolio</h1>
-  
-  <!-- Navigation Bar -->
-  <nav role="navigation">
+    <h1 role="heading">My Accessible Portfolio</h1>
+    
+    <nav role="navigation">
+        <ul>
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <img src="profile.jpg" alt="Profile picture of [Your Name]" role="img">
+    
+    <p>This is a brief description of my portfolio. I am a web developer with experience in creating accessible web applications.</p>
+    
     <ul role="list">
-      <li role="listitem"><a href="#about">About</a></li>
-      <li role="listitem"><a href="#projects">Projects</a></li>
-      <li role="listitem"><a href="#contact">Contact</a></li>
+        <li role="listitem">Project 1: Accessible Web App</li>
+        <li role="listitem">Project 2: Responsive Design</li>
+        <li role="listitem">Project 3: Frontend Development</li>
     </ul>
-  </nav>
-
-  <!-- Profile Image -->
-  <img role="img" src="profile.jpg" alt="Profile picture of the portfolio owner">
-
-  <!-- Brief Description -->
-  <p id="about">
-    Hi, I’m a frontend developer passionate about building clean, accessible, and user-friendly web applications.
-  </p>
-
-  <!-- Projects List -->
-  <section id="projects">
-    <h2 role="heading">My Projects</h2>
-    <ul role="list">
-      <li role="listitem">Responsive Portfolio Website</li>
-      <li role="listitem">E-commerce Store UI</li>
-      <li role="listitem">Weather Forecast Web App</li>
-    </ul>
-  </section>
-
-  <!-- Contact Info -->
-  <section id="contact">
-    <h2 role="heading">Contact Me</h2>
-    <p>Email: myemail@example.com</p>
-  </section>
-
+    
+    <p>For more information on ARIA roles, <a href="https://web-accessibility.carnegiemuseums.org/foundations/aria/">click here</a>.</p>
 </body>
 </html>
